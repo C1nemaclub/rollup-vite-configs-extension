@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "HMR",
+  "version": "1.0",
+  "description": "Test react",
+  "action": {
+    "default_popup": "src/index.html"
+  },
+  "side_panel": {
+    "default_path": "src/index.html",
+    "default_popup": "src/index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://localhost/*", "https://localhost/*"],
+      "js": ["src/content-script.js"]
+    }
+  ],
+  "permissions": ["activeTab", "scripting", "storage", "tabs", "sidePanel"],
+
+  "background": {
+    "service_worker": "src/background.js"
+  }
+}

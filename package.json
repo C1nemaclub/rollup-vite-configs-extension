@@ -1,0 +1,40 @@
+{
+  "name": "roll-extension",
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c --bundleConfigAsCjs",
+    "start": "rollup -c -w",
+    "dev": "vite",
+    "build:vite": "vite build --watch --mode development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.25.8",
+    "@babel/preset-react": "^7.25.7",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-replace": "^6.0.1",
+    "rollup": "^4.24.0",
+    "rollup-plugin-chrome-extension": "^3.6.12",
+    "web-ext": "^8.3.0"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^5.16.7",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.9",
+    "vite-plugin-web-extension": "^4.2.0",
+    "webextension-polyfill": "^0.12.0"
+  }
+}

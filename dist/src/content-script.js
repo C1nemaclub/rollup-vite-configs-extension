@@ -1,0 +1,1 @@
+(function(){"use strict";console.log("ssss");const t=document.querySelector("body");t.style.border="5px solid red";const e=new DOMParser().parseFromString("<button>Click to open side panel</button>","text/html").body.firstElementChild;e.addEventListener("click",function(){chrome.runtime.sendMessage({type:"open_side_panel"})}),document.body.append(e)})();
